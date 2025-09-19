@@ -11,7 +11,7 @@ st.set_page_config(
 
 
 # --- Carregamento dos dados ---
-df = pd.read_csv("cancelamentos.csv")
+df = pd.read_csv("cancelamentos_sample.csv")
 
 # --- Limpeza de dados ---
 df = df.drop(columns="CustomerID", errors="ignore")
@@ -127,3 +127,4 @@ for coluna in df_filtrado.columns:
 # --- Tabela de Dados ---
 st.subheader("📑 Dados Detalhados")
 st.dataframe(df_filtrado)
+
